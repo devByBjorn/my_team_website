@@ -1,11 +1,20 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import Logo from './Logo'
+import Nav from './Nav'
+import ContactUsButton from './ContactUsButton'
 
 const Header = () => (
   <header>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/about">About</NavLink>
-    <NavLink to="/contact">Contact</NavLink>
+    <div>
+      <Logo />
+      <Nav
+        className="header-navigation"
+        linksTo={["home", "about"]}
+      />
+    </div>
+    <div>
+      <ContactUsButton />
+    </div>
   </header>
 )
 
