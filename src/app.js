@@ -16,15 +16,17 @@ import Footer from './components/Footer'
 
 const App = () => (
   <BrowserRouter>
-    <Header />
-    <main>
-      <Switch>
-        <Route exact={true} path="/home" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-      </Switch>
-    </main>
-    <Footer />
+    <div className="site-container">
+      <Header />
+      <main>
+        <Switch>
+          <Route exact={true} path="/home" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactPage} />
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   </BrowserRouter>
 )
 

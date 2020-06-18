@@ -10,7 +10,7 @@ const AskUsAboutItem = ({ logo, text }) => (
 
 const ContactUsSection = () => (
   <section className="contact-us">
-    <h2 className="page-heading">Contact</h2>
+    <h1 className="xl-heading page-heading">Contact</h1>
 
     <div>
       <h3 className="sub-heading">As us about</h3>

@@ -1,0 +1,40 @@
+@import '../abstracts/radius';
+@import '../abstracts/colors';
+
+.btn {
+  border: 2px solid;
+  border-radius: $primaryRadius;
+  padding: 1rem 3rem;
+  transition: all .2 ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-primary-dark {
+  background: transparent;
+
+  &:hover {
+    background: $primaryLight;
+    color: $primaryDark;
+  }
+}
+
+.btn-primary-light {
+  background: $primaryLight;
+
+  &:hover {
+    background: $primaryDark;
+    color: $primaryLight;
+  }
+}
+
+.btn-secondary {
+  background: $primaryLight;
+
+  &:hover {
+    background: $secondaryLight;
+    color: $primaryDark;
+  }
+}

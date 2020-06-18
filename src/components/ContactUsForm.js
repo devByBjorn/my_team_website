@@ -12,7 +12,7 @@ const ContactUsForm = () => {
       <input type="text" placeholder="Company Name" />
       <input type="text" placeholder="Title" />
       <textarea type="text" placeholder="Title" />
-      <button onClick={submitForm}>Submit</button>
+      <button className="btn btn-primary-light" onClick={submitForm}>submit</button>
     </form>
   )
 }
