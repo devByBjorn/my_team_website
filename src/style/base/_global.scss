@@ -1,4 +1,6 @@
+@import './typogrophy';
 @import './abstracts/colors';
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +12,17 @@ html {
 }
 
 body {
-  font-family: $mainFont;
-  font-size: $defaultBodySize;
   background: $primaryDark;
   box-sizing: border-box;
   color: $primaryLight;
+  font-family: $mainFont;
+  font-size: $defaultBodySize;
+  font-weight: $bodyWeight;
+  line-height: $defaultBodyLine;
 }
 
 a {
   text-decoration: none;
   color: $primaryLight;
 }
+

@@ -7,7 +7,7 @@ import clients from './../data/clients'
 import AboutBottomSection from '../components/AboutBottomSection'
 
 const AboutPage = () => (
-  <div className="sections-container">
+  <div className="content-container">
     <AboutTopSection />
     <AboutMiddleSection directors={directors} />
     <AboutBottomSection clients={clients} />

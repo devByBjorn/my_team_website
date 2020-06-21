@@ -1,5 +1,6 @@
-@import './base/typogrophy';
-@import './base/global';
-@import './components/headings';
-@import './components/buttons';
-@import './layout/containers';
+@import './base/bases';
+@import './abstracts/abstracts';
+@import './components/components';
+@import './layout/layouts';
+@import './pages/pages';
+

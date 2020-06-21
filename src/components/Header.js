@@ -4,8 +4,8 @@ import Nav from './Nav'
 import ContactUsButton from './ContactUsButton'
 
 const Header = () => (
-  <header>
-    <div>
+  <header className="header content-container">
+    <div className="logo-nav">
       <Logo />
       <Nav
         className="header-navigation"
@@ -13,7 +13,7 @@ const Header = () => (
       />
     </div>
     <div>
-      <ContactUsButton />
+      <a className="btn btn-primary-light">contact us</a>
     </div>
   </header>
 )

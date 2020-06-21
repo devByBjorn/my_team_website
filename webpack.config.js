@@ -51,14 +51,15 @@ module.exports = (env) => {
           }
         ],
       }, {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(png|jp(e*)g|svg|gif)$/,
         use: [
           'file-loader',
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true,
-              disable: true,
+              // bypassOnDebug: true,
+              // disable: true,
+              name: '[hash].[ext]',
             },
           },
         ],
