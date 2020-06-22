@@ -2,7 +2,7 @@
   background-image: url('./../images/bg-pattern-home-3.svg');
   background-position: 105% 100%;
   background-repeat: no-repeat;
-  background-color: $secondaryDarker;
+  background-color: $secondary-darker;
 
   padding: 10rem 7rem;
 
@@ -12,7 +12,7 @@
     top: -5rem;
     height: 4px;
     width: 5rem;
-    background: $primaryStandOut;
+    background: $primary-stand-out;
   }
 }
 
@@ -26,7 +26,7 @@
 
   .middle-heading {
     font-size: 3.8rem;
-    line-height: $mediumHeadingLine;
+    line-height: $heading-line-medium;
   }
 }
 

@@ -12,17 +12,17 @@ html {
 }
 
 body {
-  background: $primaryDark;
+  background: $primary-dark;
   box-sizing: border-box;
-  color: $primaryLight;
-  font-family: $mainFont;
-  font-size: $defaultBodySize;
-  font-weight: $bodyWeight;
-  line-height: $defaultBodyLine;
+  color: $primary-light;
+  font-family: $main-font;
+  font-size: $default-body-size;
+  font-weight: $body-weight;
+  line-height: $default-body-line;
 }
 
 a {
-  color: $primaryLight;
+  color: $primary-light;
   text-decoration: none;
 }
 

@@ -2,7 +2,7 @@
   background-image: url('../images/bg-pattern-home-6-about-5.svg');
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-color: $primaryStandOut;
+  background-color: $primary-stand-out;
 }
 
 .call-to-action-content {
@@ -10,16 +10,16 @@
   align-items: center;
   justify-content: space-around;
 
-  color: $secondaryDarkest;
+  color: $secondary-darkest;
   min-height: 20rem;
 
   .call-to-action-heading {
-    font-size: $mediumHeadingSize;
-    line-height: $mediumHeadingLine;
+    font-size: $heading-size-medium;
+    line-height: $heading-line-medium;
   }
 
   .contact {
-    color:$secondaryDarkest;
+    color:$secondary-darkest;
   }
 }
 

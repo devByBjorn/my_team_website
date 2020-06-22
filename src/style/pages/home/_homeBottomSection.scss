@@ -12,8 +12,8 @@
 
 
   .bottom-heading {
-    font-size: $largeHeadingSize;
-    line-height: $largeHeadingLine;
+    font-size: $heading-size-large;
+    line-height: $heading-line-large;
     padding-bottom: 5rem;
     text-align: center;
   }
@@ -33,7 +33,7 @@
   }
 
   .name {
-    font-size: $largeBodySize;
+    font-size: $body-size-large;
     padding-top: 2rem;
   }
 
@@ -42,7 +42,7 @@
   }
 
   .portrait-div {
-    border: 2px solid $primaryLight;
+    border: 2px solid $primary-light;
     border-radius: 50%;
     height: 5rem;
     margin: 2rem auto;

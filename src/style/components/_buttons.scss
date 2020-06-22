@@ -1,12 +1,11 @@
-@import '../abstracts/radius';
 @import '../abstracts/colors';
 
 .btn {
   background: transparent;
   border: 2px solid;
-  border-radius: $primaryRadius;
+  border-radius: 2.5rem;
   display: inline-block;
-  font-weight: $bodyWeight;
+  font-weight: $body-weight;
   padding: 1rem 3rem;
   transition: all .2 ease-in-out;
   white-space: nowrap;
@@ -17,30 +16,30 @@
 }
 
 .btn-primary-dark {
-  background: $primaryLight;
-  color: $primaryDark;
+  background: $primary-light;
+  color: $primary-dark;
 
   &:hover {
-    background: $primaryDark;
-    color: $primaryLight;
+    background: $primary-dark;
+    color: $primary-light;
   }
 }
 
 .btn-primary-light {
-  background: $primaryDark;
-  color: $primaryLight;
+  background: $primary-dark;
+  color: $primary-light;
   
   &:hover {
-    background: $primaryLight;
-    color: $primaryDark;
+    background: $primary-light;
+    color: $primary-dark;
   }
 }
 
 .btn-secondary {
-  background: $primaryLight;
+  background: $primary-light;
 
   &:hover {
-    background: $secondaryLight;
-    color: $primaryDark;
+    background: $secondary-light;
+    color: $primary-dark;
   }
 }

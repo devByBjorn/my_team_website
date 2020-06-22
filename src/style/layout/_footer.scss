@@ -1,5 +1,5 @@
 .footer {
-  background: $secondaryDarkest;
+  background: $secondary-darkest;
 }
 
 .footer-content {
@@ -19,7 +19,7 @@
   }
 
   .adress {
-    color: transparentize($primaryLight, .4);
+    color: transparentize($primary-light, .4);
     margin-left: 3rem;
   }
 
@@ -43,7 +43,7 @@
   }
 
   .copyright {
-    color: transparentize($primaryLight, .4);
+    color: transparentize($primary-light, .4);
   }
 }
 
