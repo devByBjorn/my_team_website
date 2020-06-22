@@ -1,0 +1,56 @@
+.call-to-action-section {
+  background-image: url('../images/bg-pattern-home-6-about-5.svg');
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-color: $primaryStandOut;
+}
+
+.call-to-action-content {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: $secondaryDarkest;
+  min-height: 20rem;
+
+  .call-to-action-heading {
+    font-size: $mediumHeadingSize;
+    line-height: $mediumHeadingLine;
+  }
+
+  .contact {
+    color:$secondaryDarkest;
+  }
+}
+
+@media(max-width: 1024px){
+
+  .call-to-action-section {
+    background-position: 0% 150%;
+  }
+
+  .call-to-action-content {
+    .call-to-action-heading {
+      font-size: 3.8rem;
+      line-height: 3.8rem;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+
+  .call-to-action-section {
+    background-position: 0% 120%;
+  }
+  .call-to-action-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 0;
+
+    .call-to-action-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}

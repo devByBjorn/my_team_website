@@ -8,9 +8,9 @@ import {
 import 'normalize.css/normalize.css'
 import './style/style.scss'
 import Header from './components/Header'
-import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
-import HomePage from './pages/HomePage'
+import AboutPage from './pages/about/AboutPage'
+import ContactPage from './pages/contact/ContactPage'
+import HomePage from './pages/home/HomePage'
 import Footer from './components/Footer'
 
 

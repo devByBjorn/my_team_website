@@ -1,8 +1,8 @@
 import React from 'react'
-import IconQoutes from '../images/icon-quotes.svg'
-import KadyBakerJPG from '../images/avatar-kady.jpg'
-import AiyshaReeseJPG from '../images/avatar-aiysha.jpg'
-import ArthurClarkeJPG from '../images/avatar-arthur.jpg'
+import IconQoutes from '../../images/icon-quotes.svg'
+import KadyBakerJPG from '../../images/avatar-kady.jpg'
+import AiyshaReeseJPG from '../../images/avatar-aiysha.jpg'
+import ArthurClarkeJPG from '../../images/avatar-arthur.jpg'
 
 const TestimonialItem = ({ qoute, name, role, img }) => (
   <div className="testimonial-item">
@@ -12,7 +12,7 @@ const TestimonialItem = ({ qoute, name, role, img }) => (
     <q className="qoute">{qoute}</q>
     <div>
       <span className="name block stand-out-word-2">{name}</span>
-      <span className="role block">{role}</span>
+      <small className="role block">{role}</small>
       <div className="portrait-div">
         <img className="portrait-img" src={img} alt={`Picture of ${name}`} />
       </div>
@@ -24,11 +24,8 @@ const HomeBottomSection = () => (
   <section className="home-bottom-section">
     <div className="content-container">
       <div className="home-bottom-content">
-        <h3 className="medium-heading heading">
-          <span className="block">Delivering real results for top </span>
-          <span className="block"> companies. Some of our
-          <span className="stand-out-word-2"> success stories.</span>
-          </span>
+        <h3 className="bottom-heading">
+          Delivering real results for top companies. Some of our<span className="stand-out-word-2"> success stories.</span>
         </h3>
         <div className="testimonials-container">
           <TestimonialItem

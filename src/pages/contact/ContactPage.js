@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactUsSection from './../components/ContactUsSection'
+import ContactUsSection from './ContactUsSection'
 
 const ContactPage = () => (
   <div className="content-container">

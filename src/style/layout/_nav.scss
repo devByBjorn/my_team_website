@@ -1,8 +1,11 @@
  @import '../abstracts/colors';
 
  .nav-item {
-    padding: 0 2rem;
     transition: color .2s ease-in-out;
+  
+  &:first-child {
+    padding-right: 3rem;
+  }
 
     &:hover {
       color: $primaryStandOut;

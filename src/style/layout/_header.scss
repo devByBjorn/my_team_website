@@ -1,12 +1,30 @@
-.header {
+.header-content {
   display: flex;
-  align-items:baseline;
-  padding: 2rem 0;
+  align-items:center;
   justify-content: space-between;
+  padding: 5rem 0;
 }
 
 .logo-nav {
   display: inherit;
   align-items: baseline;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media(max-width: 500px) {
+  .nav, .btn {
+    display: none;
+  }
+
+  .header-content {
+    padding: 3rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
