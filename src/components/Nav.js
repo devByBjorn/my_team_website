@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Nav = ({ linksTo }) => {
   return (
-    <nav className="nav">
+    <nav className="nav-desktop-tablet">
       {linksTo.map((link) => (
         <NavLink
           className="nav-item"

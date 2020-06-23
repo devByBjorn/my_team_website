@@ -13,3 +13,9 @@
 .flex-column {
   flex-direction: column;
 }
+
+@media (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+} 

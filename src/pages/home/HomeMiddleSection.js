@@ -12,7 +12,7 @@ const PitchItem = ({ logo, heading, text, alt }) => (
       <img className="icon" src={logo} alt={`${alt}`}></img>
     </div>
     <div className="text">
-      <h6 className="small-heading stand-out-word pithc-heading">{heading}</h6>
+      <h6 className="pitch-heading stand-out-word">{heading}</h6>
       <p className="paragraph">{text}</p>
     </div>
   </div>

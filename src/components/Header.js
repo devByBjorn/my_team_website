@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from './Logo'
 import Nav from './Nav'
 import NavMobile from './NavMobile'
-import IconHamburger from '../images/icon-hamburger.svg'
 
 const Header = () => (
   <header className="header">
@@ -11,18 +10,16 @@ const Header = () => (
         <div className="logo-nav">
           <Logo />
           <Nav
-            className="header-navigation"
+            className="header-navigation desktop"
             linksTo={["home", "about"]}
           />
         </div>
-        <div>
+        <div className="desktop">
           <a className="btn btn-primary-light">contact us</a>
-        </div>
-        <div className="hamburger">
-          <img src={IconHamburger} alt="hamburger menu icon" />
         </div>
       </div>
     </div>
+    <NavMobile />
   </header>
 )
 

@@ -1,0 +1,67 @@
+
+.nav-mobile-container {
+  display: none;
+}
+
+@media(max-width: 500px) {
+
+  .nav-mobile-container{
+    display: block;
+  }
+
+  .hamburger-close-btn {
+    position: fixed;
+    top: 3.5rem;
+    right: 3rem;
+
+    background: transparent;
+    border: none;
+    display:block;
+    z-index: 9999;
+  }
+
+  .close-btn {
+    color: $primary-light;
+    font-size: 2rem;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background: $secondary-dark-light;
+    background-image: url('../images/bg-pattern-about-1-mobile-nav-1.svg');
+    background-position: 15rem 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+    z-index: 999;
+    transition: all .3s ease-in-out;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 50%;
+      list-style-type: none;
+      padding: 0 5rem;
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: $space-m;
+    }
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    transition: all .3s ease-in-out;
+    z-index: 99;
+  }
+}
