@@ -1,0 +1,23 @@
+@mixin heading-xl {
+  font-size: $heading-size-xl;
+  font-weight: $heading-weight;
+  line-height: $heading-line-xl;
+}
+
+@mixin heading-large {
+  font-size: $heading-size-large;
+  font-weight: $heading-weight;
+  line-height: $heading-line-large;
+}
+
+@mixin heading-medium {
+  font-size: $heading-size-medium;
+  font-weight: $heading-weight;
+  line-height: $heading-line-medium;
+}
+
+@mixin heading-small {
+  font-size: $heading-size-small;
+  font-weight: $heading-weight;
+  line-height: $heading-line-small;
+}

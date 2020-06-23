@@ -7,8 +7,15 @@
   box-sizing: inherit;
 }
 
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+  height: 100%;
+  position: relative;
 }
 
 body {
@@ -18,7 +25,9 @@ body {
   font-family: $main-font;
   font-size: $default-body-size;
   font-weight: $body-weight;
+  height: 100%;
   line-height: $default-body-line;
+  position: relative;
 }
 
 a {

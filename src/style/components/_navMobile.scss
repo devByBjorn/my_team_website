@@ -11,8 +11,8 @@
 
   .hamburger-close-btn {
     position: fixed;
-    top: 3.5rem;
-    right: 3rem;
+    top: $space-m;
+    right: $space-m;
 
     background: transparent;
     border: none;
@@ -45,7 +45,7 @@
       justify-content: center;
       height: 50%;
       list-style-type: none;
-      padding: 0 5rem;
+      padding: 0 $space-l;
       width: 100%;
     }
 
@@ -59,8 +59,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+
     background: rgba(0,0,0,.5);
+    height: 100%;
     transition: all .3s ease-in-out;
     z-index: 99;
   }

@@ -1,0 +1,90 @@
+.director-card {
+  position: relative;
+  
+
+  .director-card-content {
+    display: flex;
+    flex-direction: column;
+   
+    background: $secondary-darker;
+    height: 25rem;
+    text-align: center;
+    width: 30rem;
+  }
+
+  .portrait-div {
+    position: relative;
+    border-radius: 50%;
+    padding: 45px 45px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .qoute-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .qoute {
+    padding: $space-xxs $space-m;
+  }
+
+  .role {
+    font-style: italic;
+    font-weight: $light-weight;
+  }
+
+  .social {
+    display: flex;
+    padding-top: $space-xs;
+
+    img {
+      margin: 0 $space-xxs;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .qoute-btn {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+    background: $primary-stand-out;
+    border: none;
+    border-radius: 50%;
+    height: 5rem;
+    transition: all .2s ease-in-out;
+    width: 5rem;
+
+    &:hover {
+      background: $secondary-light;
+      cursor: pointer;
+    }
+
+    &:active {
+      background: $secondary-light;
+    }
+
+    .cross {
+      margin-top: 2px;
+    }
+  }
+}

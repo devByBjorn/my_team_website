@@ -4,7 +4,7 @@
     transition: color .2s ease-in-out;
   
   &:first-child {
-    padding-right: 3rem;
+    padding-right: $space-m;
   }
 
     &:hover {

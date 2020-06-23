@@ -8,51 +8,13 @@
 .home-bottom-content {
   display: flex;
   flex-direction: column;
-  padding: 10rem 7rem;
+  padding: $space-xxl $space-xl;
 
 
   .bottom-heading {
-    font-size: $heading-size-large;
-    line-height: $heading-line-large;
-    padding-bottom: 5rem;
+    @include heading-large;
+    padding-bottom: $space-l;
     text-align: center;
-  }
-
-  .testimonials-container {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-
-  .testimonial-item {
-    padding: 0 2rem;
-  }
-
-  .icon-qoutes {
-    margin-bottom: -2.5rem;
-  }
-
-  .name {
-    font-size: $body-size-large;
-    padding-top: 2rem;
-  }
-
-  .role {
-    font-style: italic;
-  }
-
-  .portrait-div {
-    border: 2px solid $primary-light;
-    border-radius: 50%;
-    height: 5rem;
-    margin: 2rem auto;
-    width: 5rem;
-  }
-
-  .portrait-img {
-    border-radius: 50%;
-    height: auto;
-    width: 100%;
   }
 }
 
@@ -63,25 +25,17 @@
     .bottom-heading {
       font-size: 3.8rem;
       line-height: 3.8rem;
-      margin-top: 1rem;
-    }
-
-    .testimonials-container {
-      flex-direction: column;
-    }
-
-    .testimonial-item {
-      padding:2rem;
-    }    
+      margin-top: $space-l;
+    }   
   }
 }
 
 @media (max-width: 500px) {
   .home-bottom-content {
-    padding: 10rem 0;
+    padding: $space-xxs 0;
 
     .bottom-heading {
-      padding-top: 4rem;
+      padding-top: $space-l;
     }
   }
 }

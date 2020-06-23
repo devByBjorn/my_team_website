@@ -1,0 +1,49 @@
+/* Pitch Item*/
+.pitch-item {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $space-s;
+
+  .icon-container {
+    align-self: flex-start;
+    width: $space-l;
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .pitch-heading {
+    @include heading-small;
+    margin-bottom: $space-xxs;
+  }
+
+  .text {
+    margin-bottom: $space-xxs;
+    margin-left: $space-s;
+    max-width: 45rem;
+  }
+}
+
+
+@media (max-width: 1025px) {
+  .pitch-item {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .pitch-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: $space-s;
+    text-align: center;
+
+    .icon-container {
+      align-self: center;
+    }
+  }
+
+}

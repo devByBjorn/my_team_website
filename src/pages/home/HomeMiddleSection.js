@@ -2,21 +2,8 @@ import React from 'react'
 import IconPerson from '../../images/icon-person.svg'
 import IconChart from '../../images/icon-chart.svg'
 import IconCog from '../../images/icon-cog.svg'
-//import IconPerson from '../images/icon-person.svg'
+import PitchItem from '../../components/PitchItem'
 
-/// FILE LOADER IN WEBPACK - ADD
-
-const PitchItem = ({ logo, heading, text, alt }) => (
-  <div className="pitch-item">
-    <div className="icon-container">
-      <img className="icon" src={logo} alt={`${alt}`}></img>
-    </div>
-    <div className="text">
-      <h6 className="pitch-heading stand-out-word">{heading}</h6>
-      <p className="paragraph">{text}</p>
-    </div>
-  </div>
-)
 
 const HomeMiddleSection = () => (
   <section className="home-middle-section">

@@ -1,17 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Nav = ({ linksTo }) => {
+const Nav = props => {
   return (
     <nav className="nav-desktop-tablet">
-      {linksTo.map((link) => (
-        <NavLink
-          className="nav-item"
-          activeClassName="nav-item-active"
-          key={link}
-          to={`/${link.toLowerCase()}`}
-        >{link}</NavLink>
-      ))}
+      <NavLink to="/" className="nav-item">home</NavLink>
+      <NavLink to="/about" className="nav-item">about</NavLink>
     </nav>
   )
 }

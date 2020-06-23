@@ -20,6 +20,7 @@ $heading-size-small: 1.8rem;
 
 // Body
 $body-weight: 600;
+$light-weight: 400;
 
 $body-line-large: 2.8rem;
 $body-size-large: 1.8rem;
@@ -27,5 +28,15 @@ $body-size-large: 1.8rem;
 $default-body-line: 2.5rem;
 $default-body-size: 1.5rem;
 
-// small
-$light-weight: 400;
+@mixin body-large {
+  font-size: $body-size-large;
+  font-weight: $body-weight;
+  line-height: $body-line-large;
+}
+
+@mixin body-default {
+  font-size: $default-body-size;
+  font-weight: $body-weight;
+  line-height: $default-body-line;
+}
+

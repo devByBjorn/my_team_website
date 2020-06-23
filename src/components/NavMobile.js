@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import IconHamburger from '../images/icon-hamburger.svg'
+import IconClose from '../images/icon-close.svg'
 
 const NavMobile = props => {
   const node = useRef()
@@ -39,7 +40,7 @@ const NavMobile = props => {
           onClick={toggleMenu}>
           {menuWidth === '0rem'
             ? (<img src={IconHamburger} alt="hamburger menu icon" />)
-            : (<span className="close-btn block">&#10006;</span>)}
+            : (<img src={IconClose} alt="close menu icon" />)}
         </button>
         <nav
           className="nav-mobile"

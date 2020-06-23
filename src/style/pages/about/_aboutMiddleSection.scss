@@ -1,0 +1,27 @@
+.about-middle-section {
+  background-image: url('./../images/bg-pattern-about-2-contact-1.svg'), url('./../images/bg-pattern-home-4-about-3.svg');
+  background-position: -6% 0%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: $secondary-dark;
+}
+
+.about-middle-content {
+  padding: $space-xxl 0;
+  
+  .middle-heading {
+    @include heading-medium;
+    text-align: center;
+  }
+
+  .directors-grid {
+    display: grid;
+    column-gap: $space-m;
+    grid-template-columns: repeat(3, 30rem);
+    justify-content: center;
+    row-gap: $space-l;
+
+    padding: $space-l 0;
+    width: 100%;
+  }
+}
+

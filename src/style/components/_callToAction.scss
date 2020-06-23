@@ -14,12 +14,17 @@
   min-height: 20rem;
 
   .call-to-action-heading {
-    font-size: $heading-size-medium;
-    line-height: $heading-line-medium;
+    @include heading-medium;
   }
 
-  .contact {
+  .link-button {
+    @include btn;
+
     color:$secondary-darkest;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: darken($primary-stand-out, 5%)
+    }
   }
 }
 
@@ -47,10 +52,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 8rem 0;
+    padding: $space-xl 0;
 
     .call-to-action-heading {
-      padding-bottom: 2rem;
+      padding-bottom: $space-s;
     }
   }
 }

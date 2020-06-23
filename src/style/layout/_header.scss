@@ -2,7 +2,8 @@
   display: flex;
   align-items:center;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: $space-l 0;
+
 }
 
 .logo-nav {
@@ -15,12 +16,16 @@
 }
 
 @media(max-width: 500px) {
+
+  // FIXED HEADER ON SCROLL
+
   .header-content {
-    padding: 3rem 0;
+    padding: $space-m 0;
   }
 
   .hamburger {
     display: block;
   }
 }
+
 

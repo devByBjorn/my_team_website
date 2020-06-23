@@ -1,13 +1,12 @@
 @import '../abstracts/colors';
 
-.btn {
+@mixin btn {
   background: transparent;
   border: 2px solid;
   border-radius: 2.5rem;
   display: inline-block;
   font-weight: $body-weight;
-  padding: 1rem 3rem;
-  transition: all .2 ease-in-out;
+  padding: $space-xxs $space-m;
   white-space: nowrap;
 
   &:hover {
@@ -16,8 +15,10 @@
 }
 
 .btn-primary-dark {
+  @include btn;
   background: $primary-light;
   color: $primary-dark;
+  transition: all .3s ease-in-out;
 
   &:hover {
     background: $primary-dark;
@@ -26,7 +27,9 @@
 }
 
 .btn-primary-light {
+  @include btn;
   color: $primary-light;
+  transition: all .3s ease-in-out;
   
   &:hover {
     background: $primary-light;
@@ -35,7 +38,9 @@
 }
 
 .btn-secondary {
+  @include btn;
   background: $primary-light;
+  transition: all.3s ease-in-out;
 
   &:hover {
     background: $secondary-light;

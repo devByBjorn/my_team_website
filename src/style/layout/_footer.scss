@@ -5,7 +5,7 @@
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: $space-m 0;
 
   .logo-nav-adress-container {
     display: flex;
@@ -20,7 +20,7 @@
 
   .adress {
     color: transparentize($primary-light, .4);
-    margin-left: 3rem;
+    margin-left: $space-m;
   }
 
   .adress-row {
@@ -39,7 +39,7 @@
   }
 
   .social-item {
-    margin-left: 1.5rem;
+    margin-left: $space-xs;
   }
 
   .copyright {
@@ -50,24 +50,24 @@
 @media(max-width: 1024px) and (min-width: 501px) {
 
   .footer {
-    padding-bottom: 3rem;
+    padding-bottom: $space-m;
   }
 
   .footer-content {
     position: relative;
 
     .logo {
-      padding-bottom: 2rem;
+      padding-bottom: $space-s;
     }
 
     .nav {
-      padding: 3rem 0;
+      padding: $space-m 0;
     }
 
     .adress {
       position: absolute;
       right: 0;
-      top: 3rem;
+      top: $space-m;
       text-align: right;
     }
 
@@ -97,10 +97,10 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: $space-l;
 
   .logo {
-    padding: 3rem 0;
+    padding: $space-m 0;
   }
 
   .logo-nav-adress-container {
@@ -110,12 +110,12 @@
 
   .adress {
     margin-left: 0;
-    padding: 3rem 0;
+    padding: $space-m 0;
   }
 
   .social {
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: $space-xxs;
   }
 }
 }
