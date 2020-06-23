@@ -5,7 +5,7 @@ const AboutTopSection = () => (
     <div className="content-container">
       <div className="about-top-content">
         <div className="flex-item">
-          <h2 className="top-heading">About</h2>
+          <h2>About</h2>
         </div>
         <div className="flex-item">
           <div className="line" />

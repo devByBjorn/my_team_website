@@ -10,7 +10,7 @@
   padding-top: $space-l;
   padding-bottom: $space-xxl;
 
-  .top-heading {
+  h2 {
    @include heading-medium;
     margin-top: $space-s;
   }

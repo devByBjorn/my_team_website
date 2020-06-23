@@ -1,23 +1,29 @@
+import LogoTheVerge from '../images/logo-the-verge.png'
+import LogoJakartaPost from '../images/logo-jakarta-post.png'
+import LogoTheGuardian from '../images/logo-the-guardian.png'
+import LogoTechRadar from '../images/logo-tech-radar.png'
+import LogotGadgetsNow from '../images/logo-gadgets-now.png'
+
 const clients = [
   {
     name: 'The Verge',
-    logo: 'The Verge'
+    logo: LogoTheVerge,
   },
   {
     name: 'The Jakarta Post',
-    logo: 'The Jakarta Post'
+    logo: LogoJakartaPost,
   },
   {
     name: 'The Guardian',
-    logo: 'The Guardian'
+    logo: LogoTheGuardian,
   },
   {
     name: 'techradar',
-    logo: 'techrada'
+    logo: LogoTechRadar,
   },
   {
     name: 'Gadgets Now',
-    logo: 'GADGETS NOW'
+    logo: LogotGadgetsNow,
   },
 ]
 

@@ -8,7 +8,7 @@ const HomeBottomSection = () => (
   <section className="home-bottom-section">
     <div className="content-container">
       <div className="home-bottom-content">
-        <h3 className="bottom-heading">
+        <h3>
           Delivering real results for top companies. Some of our<span className="stand-out-word-2"> success stories.</span>
         </h3>
         <div className="testimonials-container">

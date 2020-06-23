@@ -6,7 +6,7 @@ const AboutMiddleSection = ({ directors }) => (
   <section className="about-middle-section">
     <div className="content-container">
       <div className="about-middle-content">
-        <h3 className="middle-heading">Meet the directors</h3>
+        <h3>Meet the directors</h3>
         <div className="directors-grid">
           {directors.map(({ img, name, role, qoute }) => (
             <div className="grid-item" key={qoute}>

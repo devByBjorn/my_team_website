@@ -8,7 +8,7 @@
 .about-middle-content {
   padding: $space-xxl 0;
   
-  .middle-heading {
+  h3 {
     @include heading-medium;
     text-align: center;
   }

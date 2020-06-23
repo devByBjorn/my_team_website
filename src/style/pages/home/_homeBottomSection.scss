@@ -11,7 +11,7 @@
   padding: $space-xxl $space-xl;
 
 
-  .bottom-heading {
+  h3 {
     @include heading-large;
     padding-bottom: $space-l;
     text-align: center;
@@ -22,7 +22,7 @@
 @media (max-width: 1025px) {
   .home-bottom-content {
 
-    .bottom-heading {
+    h3 {
       font-size: 3.8rem;
       line-height: 3.8rem;
       margin-top: $space-l;
@@ -34,7 +34,7 @@
   .home-bottom-content {
     padding: $space-xxs 0;
 
-    .bottom-heading {
+    h3 {
       padding-top: $space-l;
     }
   }

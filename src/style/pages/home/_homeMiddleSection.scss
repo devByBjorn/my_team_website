@@ -24,7 +24,7 @@
     flex: 1;
   }
 
-  .middle-heading {
+  h3{
     font-size: 3.8rem;
     line-height: $heading-line-medium;
   }
@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
 
-    .middle-heading {
+    h3{
       margin-bottom: $space-xl;
       max-width: 60rem;
     }
@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
 
-    .middle-heading {
+    h3{
       margin-bottom: $space-xl;
       max-width: 25rem;
     }

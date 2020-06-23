@@ -11,7 +11,7 @@ const HomeMiddleSection = () => (
       <div className="line" />
       <div className="home-middle-content">
         <div className="flex-item">
-          <h3 className="middle-heading">
+          <h3>
             Build & manage
             distributed teams
             like no one else.

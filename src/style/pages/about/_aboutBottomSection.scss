@@ -1,0 +1,38 @@
+.about-bottom-section {
+  background-image: url('./../images/bg-pattern-about-4.svg');
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-color: $secondary-darker;
+}
+
+.about-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 13rem 0;
+
+  h3 {
+    @include heading-medium;
+    text-align: center;
+    padding-bottom: $space-xl;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-right: $space-xl;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
