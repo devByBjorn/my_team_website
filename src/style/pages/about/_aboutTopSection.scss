@@ -27,3 +27,59 @@
     max-width: 78rem;
   }
 }
+
+// Tablet
+@media(max-width: 1024px) {
+  .about-top-section {
+    background-position: 120% 100%;
+  }
+
+  .about-top-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+      display: none;
+    }
+
+    .paragraph {
+      max-width: 55rem;
+      text-align: center;
+    }
+  }
+}
+
+// Bigger Tablet
+@media(min-width: 1024px) {
+  .about-top-section {
+    background-position: 112% 100%;
+  }
+}
+
+// sub Iphone X
+@media(max-width: 500px) {
+  .about-top-section {
+    background-position: 150% 135%;
+  }
+
+  .about-top-content {
+    .paragraph {
+      padding: 0 $space-xs;
+    }
+  }
+}
+
+// iPhone X
+@media(max-width: 375px) {
+  .about-top-section {
+    background-position: 157% 133%;
+  }
+}
+
+// Galaxy
+@media(max-width: 360px) {
+  .about-top-section {
+    background-position: 162% 133%;
+  }
+}

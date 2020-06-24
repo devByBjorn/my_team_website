@@ -34,7 +34,7 @@
 @media (max-width: 1025px) {
 
   .home-middle-section {
-    background-position: 115% 0%;
+    background-position: 118% 0%;
   }
 
   .home-middle-content {
@@ -48,6 +48,13 @@
   }
 }
 
+// Tablet
+@media (min-width: 1024px) {
+  .home-middle-section {
+    background-position: 112% 0%;
+  }
+}
+// sub iPhone X
 @media (max-width: 500px) {
   .home-middle-section {
     background-position: 140% 0%;
@@ -62,5 +69,19 @@
       margin-bottom: $space-xl;
       max-width: 25rem;
     }
+  }
+}
+
+// iPhone X
+@media (max-width: 375px) {
+  .home-middle-section {
+    background-position: 160% 0%;
+  }
+}
+
+// Galaxy
+@media (max-width: 360px) {
+  .home-middle-section {
+    background-position: 170% 0%;
   }
 }

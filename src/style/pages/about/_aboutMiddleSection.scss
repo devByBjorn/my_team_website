@@ -25,3 +25,73 @@
   }
 }
 
+@media(max-width: 1024px) {
+  .about-middle-section {
+    background-position: -20% 0%, 100% 100%;
+  }
+
+  .about-middle-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 3.2rem;
+    }
+
+    .directors-grid {
+      grid-template-columns: repeat(2, 30rem);
+      row-gap: $space-xl;
+    }
+  }
+}
+
+// Tablet
+@media(min-width: 1024px) {
+  .about-middle-section {
+    background-position: -12% 0%, 100% 100%;
+  }
+}
+
+// Iphone sub X
+@media(max-width: 500px) {
+  .about-middle-section {
+    background-position: -40% -5.5%, 100% 100%;
+  }
+
+  .about-middle-content {
+    padding: $space-xl 0;
+
+    h3 {
+      padding-top: 2px;
+    }
+
+    .directors-grid {
+      column-gap: none;
+      grid-template-columns: repeat(1, 90vw);
+      padding: $space-m 0;
+      row-gap: $space-l;
+    }
+  }
+}
+
+// Iphone x
+@media(max-width: 375px) {
+  .about-middle-section {
+    background-position: -65% -5.5%, 100% 100%;
+  }
+
+}
+
+// Galaxy
+@media(max-width: 360px) {
+  .about-middle-section {
+    background-position: -60% -5.5%, 100% 100%;
+  }
+
+  .about-middle-content{
+    h3 {
+      padding-top: $space-xxs;
+    }
+  }
+}

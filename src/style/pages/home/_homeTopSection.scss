@@ -34,8 +34,8 @@
   }
 }
 
+// Tablet
 @media (max-width: 1025px) {
-
   .home-top-section {
     background-image: none;
 
@@ -67,6 +67,7 @@
   }
 }
 
+// Mobile
 @media  (max-width: 500px) {
   .home-top-content {
     padding-top: $space-m;

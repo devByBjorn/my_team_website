@@ -18,7 +18,7 @@
   }
 }
 
-
+// Tablet
 @media (max-width: 1025px) {
   .home-bottom-content {
 
@@ -30,10 +30,11 @@
   }
 }
 
+// Mobile
 @media (max-width: 500px) {
   .home-bottom-content {
-    padding: $space-xxs 0;
-
+    padding: $space-xxl 0;
+    padding-top: $space-m;
     h3 {
       padding-top: $space-l;
     }
