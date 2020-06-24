@@ -7,7 +7,7 @@ const ContactUsForm = () => {
   }
 
   return (
-    <form>
+    <form className="contact-us-form">
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email Adress" />
       <input type="text" placeholder="Company Name" />

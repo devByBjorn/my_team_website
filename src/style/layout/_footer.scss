@@ -1,5 +1,8 @@
 .footer {
+  display: flex;
+  align-items:center;
   background: $secondary-darkest;
+  min-height: 20rem;
 }
 
 .footer-content {

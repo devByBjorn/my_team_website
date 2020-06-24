@@ -1,10 +1,10 @@
 import React from 'react'
-import Logo from './Logo'
-import Nav from './Nav'
+import Logo from '../components/Logo'
+import Nav from '../components/Nav'
 import IconFacebook from '../images/icon-facebook.svg'
 import IconPinterest from '../images/icon-pinterest.svg'
 import IcontTwitter from '../images/icon-twitter.svg'
-import CopyrightYear from './CopyRightYear'
+import CopyrightYear from '../components/CopyRightYear'
 
 const Footer = () => {
   return (

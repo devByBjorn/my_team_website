@@ -1,0 +1,42 @@
+@import '../../components//contactUsForm';
+
+@mixin flex-start {
+  justify-content: flex-start;
+}
+
+.contact-us-section {
+  background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-contact-2.svg);
+  background-position: -6% 0%, 105% 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.contact-us-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $space-l;
+  padding-bottom: $space-xxl;
+
+  .pitch-item {
+    @include flex-start;
+    margin-bottom: $space-xxs;
+    margin-left: 5px;
+  }
+
+  .flex-item {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+  }
+
+  h2 {
+    @include heading-large;
+    padding: $space-s 0;
+  }
+
+  h3 {
+    @include heading-small;
+    color: $primary-stand-out;
+    font-size: 3.2rem;
+    padding: $space-m 0;
+  }
+}

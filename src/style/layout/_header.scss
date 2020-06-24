@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items:center;
-  
-  height: 10rem;
+
+  background: transparentize($color: $primary-dark, $amount: .009);
+  height: 12rem;
   max-width: 100vw;
   position: fixed;
   width: 100%;
@@ -11,7 +12,6 @@
 }
 
 .scroll-style {
-  background: transparentize($color: $primary-dark, $amount: .009);
   box-shadow: 1px 1px 10px 2px $secondary-darkest;
 }
 
@@ -21,17 +21,29 @@
   justify-content: space-between;
 }
 
+.logo{
+  padding-right: $space-l;
+}
+
 .logo-nav {
   display: inherit;
-  align-items: baseline;
+  align-items: center;
 }
 
 .hamburger {
   display: none;
 }
 
+// mobile
 @media(max-width: 500px) {
+  .main-header {
+    height: 8rem;
+    padding-top: $space-s;
+  }
+}
 
+// mobile landscape
+@media(max-height: 500px) {
   .main-header {
     height: 8rem;
   }
@@ -44,5 +56,8 @@
     display: block;
   }
 }
+
+
+
 
 

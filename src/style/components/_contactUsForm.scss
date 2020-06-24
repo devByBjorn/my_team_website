@@ -1,0 +1,26 @@
+@mixin form-field {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $primary-light;
+  color: $secondary-light;
+  padding: $space-s $space-xxs;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction:column;
+
+  input {
+    @include form-field;
+  }
+
+  textarea {
+    @include form-field;
+  }
+
+  button {
+    width: 13rem;
+    margin-top: $space-s;
+    padding: $space-xs 0;
+  }
+}

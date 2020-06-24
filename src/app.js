@@ -7,11 +7,11 @@ import {
 } from 'react-router-dom'
 import 'normalize.css/normalize.css'
 import './style/style.scss'
-import Header from './components/Header'
+import Header from './layout/Header'
 import AboutPage from './pages/about/AboutPage'
 import ContactPage from './pages/contact/ContactPage'
 import HomePage from './pages/home/HomePage'
-import Footer from './components/Footer'
+import Footer from './layout/Footer'
 import ScrollToTop from './components/ScrollToTop'
 
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from './Logo'
-import Nav from './Nav'
-import NavMobile from './NavMobile'
+import Logo from '../components/Logo'
+import Nav from '../components/Nav'
+import NavMobile from '../components/NavMobile'
 import useScrollTopPosition from '../hooks/useScrollTopPosition'
 
 const Header = props => {

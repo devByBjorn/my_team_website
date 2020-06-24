@@ -1,37 +1,44 @@
 import React from 'react'
+import IconPerson from '../../images/icon-person.svg'
+import IconChart from '../../images/icon-chart.svg'
+import IconCog from '../../images/icon-cog.svg'
 import ContactUsForm from '../../components/ContactUsForm'
-
-const AskUsAboutItem = ({ logo, text }) => (
-  <li>
-    <div>logo</div>
-    <p>{text}</p>
-  </li>
-)
+import PitchItem from '../../components/PitchItem'
 
 const ContactUsSection = () => (
-  <section className="contact-us">
-    <h1 className="xl-heading page-heading">Contact</h1>
+  <section className="contact-us-section">
+    <div className="content-container">
+      <div className="contact-us-content">
 
-    <div>
-      <h3 className="sub-heading">As us about</h3>
-      <ul>
-        <AskUsAboutItem
-          text="The quality of our talent network"
-        />
-        <AskUsAboutItem
-          text="Usage & implementation of our software"
-        />
-        <AskUsAboutItem
-          text="How we help drive innovation"
-        />
-      </ul>
+        <div className="flex-item">
+          <h2>Contact</h2>
+          <h3>Ask us about</h3>
+          <div>
+            <PitchItem
+              logo={IconPerson}
+              alt="Icon of a person"
+              heading=""
+              text="The quality of our talent network"
+            />
+            <PitchItem
+              logo={IconChart}
+              alt="Icon of a chart"
+              heading=""
+              text="Usage & implementation of our software"
+            />
+            <PitchItem
+              logo={IconCog}
+              alt="Icon of a cog"
+              heading=""
+              text="How we help drive innovation"
+            />
+          </div>
+        </div>
+        <div className="flex-item">
+          <ContactUsForm />
+        </div>
+      </div>
     </div>
-
-    <div>
-      <ContactUsForm />
-    </div>
-
-
   </section>
 )
 

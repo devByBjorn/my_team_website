@@ -1,3 +1,7 @@
+@mixin flex-end {
+  justify-content: flex-end;
+}
+
 .home-middle-section {
   background-image: url('./../images/bg-pattern-home-3.svg');
   background-position: 105% 100%;
@@ -18,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   padding: 20rem 0;
+
+  .pitch-item {
+    @include flex-end;
+  }
 
   .flex-item {
     flex: 1;
