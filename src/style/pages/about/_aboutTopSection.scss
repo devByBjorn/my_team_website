@@ -64,6 +64,11 @@
   }
 
   .about-top-content {
+
+    h2 {
+      margin-top: 0;
+    }
+
     .paragraph {
       padding: 0 $space-xs;
     }
@@ -81,5 +86,22 @@
 @media(max-width: 360px) {
   .about-top-section {
     background-position: 162% 133%;
+  }
+}
+
+// Mobile landscape
+@media (max-height: 500px) {
+
+  .about-top-section {
+    background-position: 122% 130%;
+  }
+
+  .about-top-content {
+    padding-top: $space-xxs;
+    padding-bottom: 20rem;
+
+    h2 {
+      padding-top: 0;
+    }
   }
 }

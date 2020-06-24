@@ -10,8 +10,8 @@
   }
 
   .hamburger-close-btn {
-    position: absolute;
-    top: $space-m;
+    position: fixed;
+    top: 3rem;
     right: $space-m;
 
     background: transparent;
@@ -55,7 +55,7 @@
   }
 
   .background-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;

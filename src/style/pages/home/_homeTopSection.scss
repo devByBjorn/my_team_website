@@ -55,7 +55,6 @@
       margin-right: 0;
     }
   
-
     .paragraph {
       margin-top: $space-l;
       max-width: 55rem;
@@ -70,7 +69,7 @@
 // Mobile
 @media  (max-width: 500px) {
   .home-top-content {
-    padding-top: $space-m;
+    padding-top: $space-l;
     padding-bottom: 20rem;
 
    h2 {
@@ -79,6 +78,18 @@
     .paragraph {
       margin-top: $space-l;
       max-width: 55rem;
+    }
+  }
+}
+
+// Mobile landscape
+@media (max-height: 500px) {
+  .home-top-content {
+    padding-top: $space-s;
+    padding-bottom: 20rem;
+
+    h2 {
+      padding-bottom: $space-m;
     }
   }
 }

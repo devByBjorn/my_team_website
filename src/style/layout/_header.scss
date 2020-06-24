@@ -1,9 +1,24 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+  height: 10rem;
+  max-width: 100vw;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.scroll-style {
+  background: transparentize($color: $primary-dark, $amount: .009);
+  box-shadow: 1px 1px 10px 2px $secondary-darkest;
+}
+
 .header-content {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  padding: $space-l 0;
-
 }
 
 .logo-nav {
@@ -17,7 +32,9 @@
 
 @media(max-width: 500px) {
 
-  // FIXED HEADER ON SCROLL
+  .main-header {
+    height: 8rem;
+  }
 
   .header-content {
     padding: $space-m 0;

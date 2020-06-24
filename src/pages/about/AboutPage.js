@@ -6,6 +6,7 @@ import directors from '../../data/directors'
 import clients from '../../data/clients'
 import AboutBottomSection from './AboutBottomSection'
 
+
 const AboutPage = () => (
   <div>
     <AboutTopSection />
@@ -14,5 +15,6 @@ const AboutPage = () => (
     <CallToAction />
   </div>
 )
+
 
 export default AboutPage

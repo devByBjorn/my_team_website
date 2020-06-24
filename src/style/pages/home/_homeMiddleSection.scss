@@ -4,12 +4,10 @@
   background-repeat: no-repeat;
   background-color: $secondary-darker;
 
-  padding: 20rem $space-xl;
-
   .line {
     position: absolute;
     left: $space-s;
-    top: -$space-l;
+    top: 15rem;
     height: 4px;
     width: $space-l;
     background: $primary-stand-out;
@@ -19,6 +17,7 @@
 .home-middle-content {
   display: flex;
   justify-content: space-between;
+  padding: 20rem 0;
 
   .flex-item {
     flex: 1;
@@ -31,15 +30,20 @@
 }
 
 
-@media (max-width: 1025px) {
-
+@media (max-width: 1024px) {
   .home-middle-section {
     background-position: 118% 0%;
+
+    .line {
+      top: 8rem;
+      left: $space-xl;
+    }
   }
 
   .home-middle-content {
     flex-direction: column;
     justify-content: center;
+    padding: $space-xxl $space-l;
 
     h3{
       margin-bottom: $space-xl;
@@ -48,25 +52,29 @@
   }
 }
 
-// Tablet
 @media (min-width: 1024px) {
   .home-middle-section {
     background-position: 112% 0%;
   }
 }
+
 // sub iPhone X
 @media (max-width: 500px) {
   .home-middle-section {
     background-position: 140% 0%;
-    padding: $space-xxl 0;
+
+    .line {
+      top: 5rem;
+    }
   }
 
   .home-middle-content {
     flex-direction: column;
     justify-content: center;
+    padding: $space-xl 0;
 
     h3{
-      margin-bottom: $space-xl;
+      margin-bottom: $space-l;
       max-width: 25rem;
     }
   }
@@ -83,5 +91,12 @@
 @media (max-width: 360px) {
   .home-middle-section {
     background-position: 170% 0%;
+  }
+}
+
+// Mobile landscape
+@media (max-height: 500px) {
+  .home-middle-section {
+    background-position: 125% 0%;
   }
 }
