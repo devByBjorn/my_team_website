@@ -9,6 +9,7 @@
 
   &::placeholder {
     color: $primary-light;
+    opacity: .5;
     transition: all .2s ease-in-out;
   }
 
@@ -16,11 +17,18 @@
     border-color: $secondary-light;
     cursor: pointer;
 
+    &:focus {
+      outline: none;
+    }
+
     &::placeholder {
+      color: $primary-light;
       opacity: 1;
     }
   }
 }
+
+
 
 .contact-us-form {
   display: flex;
@@ -30,14 +38,66 @@
     @include form-field;
   }
 
+  // transparent background on autofill
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff;
+  }
+
   textarea {
     @include form-field;
     padding-bottom: $space-l;
   }
 
   button {
-    width: 13rem;
     margin-top: $space-s;
     padding: $space-xs 0;
+    width: 13rem;
+
+    &:hover {
+      background: $secondary-light;
+      border-color: $secondary-light; 
+      color: $primary-dark;
+    }
+
+    &:disabled {
+      background: rgba(116, 116, 116, 0.7);
+      border: rgba(116, 116, 116, 0.7);
+      color: $secondary-dark;
+    }
   }
+
+  .error-msg {
+    color: $primary-stand-out;
+    font-style: italic;
+    height: 2rem;
+    padding-left: $space-xxs;
+  }
+
+  .error-input {
+    border-color: $primary-stand-out;
+    color: $primary-stand-out;
+
+    &::placeholder {
+      color: $primary-stand-out;
+    }
+  
+    &:hover, &:focus {
+      border-color: $primary-stand-out;
+  
+      &::placeholder {
+        color: $primary-stand-out;
+        opacity: 1;
+      }
+    }
+  
+    &:focus {
+      outline: none;
+    }
+
+  }
+
 }

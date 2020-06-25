@@ -16,7 +16,7 @@ const Footer = () => {
   const [bottomFooter, setBottomFooter] = useState('')
 
   useEffect(() => {
-    pathname === '/contact' && width > 850 && height > 950
+    pathname === '/contact' && width > 850 && height > 1050
       ? setBottomFooter('bottom-footer')
       : setBottomFooter('')
   }, [pathname, height, width])

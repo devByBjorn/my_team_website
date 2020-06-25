@@ -2,8 +2,8 @@ import React from 'react'
 import IconPerson from '../../images/icon-person.svg'
 import IconChart from '../../images/icon-chart.svg'
 import IconCog from '../../images/icon-cog.svg'
-import ContactUsForm from '../../components/ContactUsForm'
 import PitchItem from '../../components/PitchItem'
+import ContactForm from '../../components/ContactForm'
 
 const ContactUsSection = () => (
   <section className="contact-us-section">
@@ -35,7 +35,7 @@ const ContactUsSection = () => (
           </div>
         </div>
         <div className="flex-item">
-          <ContactUsForm />
+          <ContactForm />
         </div>
       </div>
     </div>

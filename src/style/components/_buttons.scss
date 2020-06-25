@@ -5,12 +5,17 @@
   border: 2px solid;
   border-radius: 2.5rem;
   display: inline-block;
+  font-size: $body-size-large;
   font-weight: $body-weight;
-  padding: .75rem $space-m;
+  padding: $space-xxs $space-m;
   white-space: nowrap;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
