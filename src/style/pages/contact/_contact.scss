@@ -115,5 +115,12 @@
       }
     }
   }
+}
 
+@media (max-height: 500px) {
+  .contact-us-section {
+    background-image: url(./../images/bg-pattern-contact-2.svg);
+    background-position: 155% 114%;
+    background-repeat: no-repeat;
+  }
 }
