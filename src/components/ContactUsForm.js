@@ -12,7 +12,7 @@ const ContactUsForm = () => {
       <input type="email" placeholder="Email Adress" />
       <input type="text" placeholder="Company Name" />
       <input type="text" placeholder="Title" />
-      <textarea type="text" placeholder="Title" />
+      <textarea type="text" placeholder="Message" />
       <button className="btn-primary-dark" onClick={submitForm}>submit</button>
     </form>
   )

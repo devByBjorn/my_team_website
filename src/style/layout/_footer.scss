@@ -3,6 +3,13 @@
   align-items:center;
   background: $secondary-darkest;
   min-height: 20rem;
+  width: 100%;
+}
+
+// implemented on contact page if window height is above ...px
+.bottom-footer {
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-content {

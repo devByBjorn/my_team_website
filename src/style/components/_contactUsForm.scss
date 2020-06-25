@@ -2,8 +2,24 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid $primary-light;
-  color: $secondary-light;
+  color: $primary-light;
+  font-size: $body-size-large;
   padding: $space-s $space-xxs;
+  transition: all .1s ease-in-out;
+
+  &::placeholder {
+    color: $primary-light;
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover, &:focus {
+    border-color: $secondary-light;
+    cursor: pointer;
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
 }
 
 .contact-us-form {
@@ -16,6 +32,7 @@
 
   textarea {
     @include form-field;
+    padding-bottom: $space-l;
   }
 
   button {

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import useWindowResize from '../hooks/useWindowResize'
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
 import IconFacebook from '../images/icon-facebook.svg'
@@ -7,8 +9,20 @@ import IcontTwitter from '../images/icon-twitter.svg'
 import CopyrightYear from '../components/CopyRightYear'
 
 const Footer = () => {
+
+
+  const { width, height } = useWindowResize()
+  const { pathname } = useLocation()
+  const [bottomFooter, setBottomFooter] = useState('')
+
+  useEffect(() => {
+    pathname === '/contact' && width > 850 && height > 950
+      ? setBottomFooter('bottom-footer')
+      : setBottomFooter('')
+  }, [pathname, height, width])
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${bottomFooter}`}>
       <div className="content-container">
 
         <div className="footer-content">
