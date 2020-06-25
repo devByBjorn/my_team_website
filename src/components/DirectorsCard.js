@@ -7,17 +7,17 @@ import IconTwitter from '../images/icon-twitter.svg'
 const DirectorCard = ({ img, name, role, qoute }) => {
   const [qouteIsVisible, setQouteIsVisible] = useState(false)
   const [rotateCross, setRotateCross] = useState('0deg')
-  const [activeColor, setActiveColor] = useState('#f67e7e')
+  const [activeBtn, setActiveBtn] = useState('')
 
   const showQouteOnClick = () => {
     if (!qouteIsVisible) {
       setQouteIsVisible(true)
       setRotateCross('45deg')
-      setActiveColor('#79c8c7')
+      setActiveBtn('active-btn')
     } else {
       setQouteIsVisible(false)
       setRotateCross('0deg')
-      setActiveColor('#f67e7e')
+      setActiveBtn('')
     }
   }
   return (
@@ -32,8 +32,10 @@ const DirectorCard = ({ img, name, role, qoute }) => {
                 style={{ display: qouteIsVisible ? 'block' : 'none' }}
               >{qoute}</q>
               <div className="social">
-                <img src={IconTwitter} />
-                <img src={IconLinkedIn} />
+                <div className="twitter" />
+                <div className="linkedIn" />
+                {/*<img src={IconTwitter} />
+          <img src={IconLinkedIn} />*/}
               </div>
             </div>
 
@@ -47,9 +49,9 @@ const DirectorCard = ({ img, name, role, qoute }) => {
           )
         }
       </div>
-      <button className="qoute-btn"
+      <button className={`qoute-btn ${activeBtn}`}
         onClick={showQouteOnClick}
-        style={{ background: activeColor }}
+        style={{ background: activeBtn }}
       >
         <div className="cross" style={{ transform: `rotate(${rotateCross})` }}>
           <img src={IconCross} />

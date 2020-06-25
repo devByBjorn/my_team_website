@@ -17,6 +17,7 @@
 .btn-primary-dark {
   @include btn;
   background: $primary-light;
+  border-color: $primary-light;
   color: $primary-dark;
   transition: all .3s ease-in-out;
 
@@ -33,6 +34,7 @@
   
   &:hover {
     background: $primary-light;
+    border-color: $primary-light;
     color: $primary-dark;
   }
 }

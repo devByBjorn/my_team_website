@@ -23,7 +23,9 @@
     color:$secondary-darkest;
     transition: .3s ease-in-out;
     &:hover {
-      background: darken($primary-stand-out, 5%)
+      background: $secondary-darkest;
+      border-color: $secondary-darkest;
+      color: $primary-light;
     }
   }
 }
