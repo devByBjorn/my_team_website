@@ -12,6 +12,11 @@
   margin-bottom: -$space-s;
 }
 
+.qoute {
+  display: block;
+  min-height: 12rem;
+}
+
 .name {
   font-size: $body-size-large;
   padding-top: $space-s;
@@ -43,6 +48,9 @@
 
     .testimonial-item {
       padding: $space-s;
-    }    
-
+    }   
+    
+    .qoute {
+      min-height: 0;
+    }
 }
