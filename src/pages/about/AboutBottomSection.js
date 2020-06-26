@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const AboutBottomSection = ({ clients }) => (
   <section className="about-bottom-section">
     <div className="content-container">
