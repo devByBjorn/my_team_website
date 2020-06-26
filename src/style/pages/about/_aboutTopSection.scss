@@ -1,6 +1,6 @@
 .about-top-section {
   background-image: url('./../images/bg-pattern-about-1-mobile-nav-1.svg');
-  background-position: 105% 100%;
+  background-position: 106% 100%;
   background-repeat: no-repeat;
 }
 
@@ -47,13 +47,6 @@
       max-width: 55rem;
       text-align: center;
     }
-  }
-}
-
-// Bigger Tablet
-@media(min-width: 1024px) {
-  .about-top-section {
-    background-position: 112% 100%;
   }
 }
 

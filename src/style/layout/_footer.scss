@@ -1,131 +1,143 @@
 .footer {
   display: flex;
-  align-items:center;
+  align-items: center;
+
   background: $secondary-darkest;
-  min-height: 20rem;
-  width: 100%;
+  min-height: 19rem;
+  padding: $space-m 0;
 }
 
-// implemented on contact page if window height is above ...px
+// implemented on contact page if innerWidth > 850 && innerHeight > 1050 - se Footer component
 .bottom-footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
+}
+
+
+.logo-footer {
+  grid-area: logo;
+}
+.nav-footer {
+  grid-area: nav-items;
+}
+
+.adress {
+  grid-area: adress;
+}
+
+.social {
+  display: flex;
+  grid-area: social; 
+}
+
+.copyright {
+  grid-area: copyright;
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  padding: $space-m 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "logo adress social social social"
+  "logo adress social social social"
+  "nav-items adress copyright copyright copyright";
+  width: 100%;
 
-  .logo-nav-adress-container {
-    display: flex;
-  }
-
-  .logo-and-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 8rem;
-  }
-
-  .adress {
-    color: transparentize($primary-light, .4);
-    margin-left: $space-m;
-  }
-
-  .adress-row {
-    line-height:2rem;
-  }
-
-  .social-copyright-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .social{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .social-item {
-    margin-left: $space-xs;
-  }
-
-  .copyright {
-    color: transparentize($primary-light, .4);
-  }
-}
-
-@media(max-width: 1024px) and (min-width: 501px) {
-
-  .footer {
+  .social {
+    justify-self: end;
     padding-bottom: $space-m;
   }
 
+  .copyright {
+    justify-self: end;
+  }
+
+  .social-item {
+    &:nth-child(2) {
+      margin: 0 $space-s;
+    }
+  }
+
+  .nav-item-footer {
+    transition: color $transition02s;
+
+    &:hover {
+      color: $primary-stand-out;
+    }
+
+    &:first-child {
+      margin-right: $space-m;
+    }
+  }
+
+  .adress, .copyright {
+    color: transparentize($color: $primary-light, $amount: .2);
+    letter-spacing: 1px;
+    // line-height: 2.2rem;
+  } 
+}
+
+@media(max-width: 1024px) {
   .footer-content {
-    position: relative;
-
-    .logo {
-      padding-bottom: $space-s;
-    }
-
-    .nav {
-      padding: $space-m 0;
-    }
-
+    grid-template-areas: 
+    "logo adress adress adress adress"
+    "nav-items adress adress adress adress"
+    "social copyright copyright copyright copyright";
+  
     .adress {
-      position: absolute;
-      right: 0;
-      top: $space-m;
+      justify-self: end;
+      padding-bottom: $space-m;
       text-align: right;
     }
 
     .social {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
+      justify-self: start;
+      padding-bottom: $space-xxs;
 
-    .social-item {
-      &:first-child {
-        margin-left: 0;
+      .social-item {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
-
     .copyright {
-      position: absolute;
-      right: 0;
-      bottom: 0;
+      justify-self: end;
     }
   }
 }
 
 @media(max-width: 500px) {
-.footer-content {
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: $space-l;
+  .footer-content {
+    grid-template-areas: 
+    "logo"
+    "nav-items"
+    "adress"
+    "social"
+    "copyright";
 
-  .logo {
-    padding: $space-m 0;
-  }
-
-  .logo-nav-adress-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .adress {
-    margin-left: 0;
-    padding: $space-m 0;
-  }
-
-  .social {
     justify-content: center;
-    padding-bottom: $space-xxs;
+    text-align: center; 
+
+    .logo-footer {
+      margin: 0 auto;
+      width: 10rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .nav-footer {
+      padding: $space-s 0;
+    }
+
+    .social, .adress {
+      justify-content: center;
+      justify-self: center;
+      text-align: center;
+      width: 100%;
+    }
   }
-}
 }

@@ -37,7 +37,7 @@
     background-repeat: no-repeat;
     overflow: auto;
     z-index: 999;
-    transition: all .3s ease-in-out;
+    transition: all $transition02s;
 
     ul {
       display: flex;
@@ -62,7 +62,7 @@
 
     background: rgba(0,0,0,.5);
     height: 100%;
-    transition: all .3s ease-in-out;
+    transition: $transition02s;
     z-index: 99;
   }
 }

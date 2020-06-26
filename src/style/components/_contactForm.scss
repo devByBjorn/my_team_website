@@ -10,7 +10,7 @@
   &::placeholder {
     color: $primary-light;
     opacity: .5;
-    transition: all .2s ease-in-out;
+    transition: $transition02s;
   }
 
   &:hover, &:focus {

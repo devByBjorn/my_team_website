@@ -23,8 +23,11 @@ const Header = props => {
         <div className="content-container" >
           <div className="header-content">
             <div className="logo-nav">
-              <Logo />
-              <Nav />
+              <Logo className="logo-header" />
+              <Nav
+                className="nav-desktop-tablet"
+                itemClassName="nav-item-header"
+              />
             </div>
             <div className="desktop">
               <NavLink to="/contact" className="btn-primary-light">contact us</NavLink>

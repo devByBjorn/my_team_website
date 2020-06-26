@@ -1,17 +1,7 @@
-.stand-out-word {
-  color: $primary-stand-out;
-}
-
-.stand-out-word-2 {
-  color: $secondary-light;
-}
+$transition02s: all .2s ease-in-out;
 
 .block {
   display: block;
-}
-
-.flex-column {
-  flex-direction: column;
 }
 
 @media (max-width: 500px) {

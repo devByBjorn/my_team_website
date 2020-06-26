@@ -21,7 +21,7 @@
     @include btn;
 
     color:$secondary-darkest;
-    transition: .3s ease-in-out;
+    transition: $transition02s;
     &:hover {
       background: $secondary-darkest;
       border-color: $secondary-darkest;

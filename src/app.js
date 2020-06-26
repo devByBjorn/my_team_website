@@ -12,6 +12,7 @@ import AboutPage from './pages/about/AboutPage'
 import ContactPage from './pages/contact/ContactPage'
 import HomePage from './pages/home/HomePage'
 import Footer from './layout/Footer'
+//import FooterGrid from './layout/FooterGrid'
 import ScrollToTop from './components/ScrollToTop'
 
 

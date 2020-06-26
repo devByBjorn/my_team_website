@@ -24,7 +24,7 @@
   background: $primary-light;
   border-color: $primary-light;
   color: $primary-dark;
-  transition: all .3s ease-in-out;
+  transition: $transition02s;
 
   &:hover {
     background: $primary-dark;
@@ -35,7 +35,7 @@
 .btn-primary-light {
   @include btn;
   color: $primary-light;
-  transition: all .3s ease-in-out;
+  transition: $transition02s;
   
   &:hover {
     background: $primary-light;
@@ -47,7 +47,7 @@
 .btn-secondary {
   @include btn;
   background: $primary-light;
-  transition: all.3s ease-in-out;
+  transition: $transition02s;
 
   &:hover {
     background: $secondary-light;
