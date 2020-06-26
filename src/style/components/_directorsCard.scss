@@ -1,6 +1,5 @@
 .director-card {
   position: relative;
-  
 
   .director-card-content {
     display: flex;
@@ -49,7 +48,8 @@
 
   .social {
     display: flex;
-    padding-top: $space-xs;
+    margin-left: 5px;
+    padding-bottom: $space-xs;
 
     .twitter, .linkedIn {
       height: 3rem;
@@ -98,6 +98,9 @@
       cursor: pointer;
     }
 
+    &:focus {
+      outline: none;
+    }
     // for center placement of cross icon
     .cross {
       margin-top: 2px;
