@@ -1,13 +1,13 @@
 .about-middle-section {
   background-image: url('./../images/bg-pattern-about-2-contact-1.svg'), url('./../images/bg-pattern-home-4-about-3.svg');
-  background-position: -6% 0%, 100% 100%;
+  background-position: -10rem 0%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
   background-color: $secondary-dark;
+
 }
 
 .about-middle-content {
   padding: $space-xxl 0;
-  
   h3 {
     @include heading-medium;
     text-align: center;
@@ -25,10 +25,8 @@
   }
 }
 
+
 @media(max-width: 1024px) {
-  .about-middle-section {
-    background-position: -20% 0%, 100% 100%;
-  }
 
   .about-middle-content {
     flex-direction: column;
@@ -49,14 +47,14 @@
 // Iphone sub X
 @media(max-width: 500px) {
   .about-middle-section {
-    background-position: -40% -5.5%, 100% 100%;
+    background-position: -10rem -10rem, 100% 100%;
   }
 
   .about-middle-content {
     padding: $space-xl 0;
 
     h3 {
-      padding-top: 2px;
+      padding-top: $space-xxs;
     }
 
     .directors-grid {
@@ -68,23 +66,3 @@
   }
 }
 
-// Iphone x
-@media(max-width: 375px) {
-  .about-middle-section {
-    background-position: -65% -5.5%, 100% 100%;
-  }
-
-}
-
-// Galaxy
-@media(max-width: 360px) {
-  .about-middle-section {
-    background-position: -60% -5.5%, 100% 100%;
-  }
-
-  .about-middle-content{
-    h3 {
-      padding-top: $space-xxs;
-    }
-  }
-}

@@ -54,6 +54,11 @@
   }
 
   .social-item {
+
+    &:hover {
+      cursor: pointer;
+    }
+    
     &:nth-child(2) {
       margin: 0 $space-s;
     }
@@ -73,8 +78,6 @@
 
   .adress, .copyright {
     color: transparentize($color: $primary-light, $amount: .2);
-    letter-spacing: 1px;
-    // line-height: 2.2rem;
   } 
 }
 
@@ -94,13 +97,8 @@
     .social {
       justify-self: start;
       padding-bottom: $space-xxs;
-
-      .social-item {
-        &:hover {
-          cursor: pointer;
-        }
-      }
     }
+
     .copyright {
       justify-self: end;
     }

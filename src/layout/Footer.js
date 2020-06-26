@@ -24,24 +24,20 @@ const Footer = () => {
       <div className="content-container">
 
         <div className="footer-content">
-
           <Logo
             className="logo-footer"
           />
-
           <Nav
             className="nav-footer"
             itemClassName="nav-item-footer"
             linksTo={["about", "home"]}
           />
-
           <div className="adress">
             <small className="adress-row block">987 Hillcrest Lane</small>
             <small className="adress-row block">Irvine, CA</small>
             <small className="adress-row block">California 92714</small>
             <small className="adress-row block">Call us: 949-833-7432</small>
           </div>
-
           <div className="social">
             <div className="social-item">
               <img src={IconFacebook} alt="facebook icon" />
@@ -53,7 +49,6 @@ const Footer = () => {
               <img src={IcontTwitter} alt="twitter icon" />
             </div>
           </div>
-
           <div className="copyright">
             <CopyrightYear />
           </div>
