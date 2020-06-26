@@ -57,9 +57,8 @@ module.exports = (env) => {
           {
             loader: 'image-webpack-loader',
             options: {
-              // bypassOnDebug: true,
-              // disable: true,
-              name: '[hash].[ext]',
+              bypassOnDebug: true,
+              disable: true,
             },
           },
         ],
