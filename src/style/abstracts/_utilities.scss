@@ -1,5 +1,13 @@
 $transition02s: all .2s ease-in-out;
 
+.stand-out-word {
+  color: $primary-stand-out;
+}
+
+.stand-out-word-2 {
+  color: $secondary-light;
+}
+
 .block {
   display: block;
 }

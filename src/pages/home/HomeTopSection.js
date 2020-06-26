@@ -9,7 +9,7 @@ const HomeTopSection = () => (
           <h2>
             <span className="block">Find the</span>
             <span className="block">best
-          <span className="stand-out-word"> talent</span>
+            <span className="stand-out-word"> talent</span>
             </span>
           </h2>
         </div>
