@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import IconCross from '../images/icon-cross.svg'
-import IconLinkedIn from '../images/icon-linkedin.svg'
-import IconTwitter from '../images/icon-twitter.svg'
-
 
 const DirectorCard = ({ img, name, role, qoute }) => {
   const [qouteIsVisible, setQouteIsVisible] = useState(false)
@@ -34,11 +31,8 @@ const DirectorCard = ({ img, name, role, qoute }) => {
               <div className="social">
                 <div className="twitter" />
                 <div className="linkedIn" />
-                {/*<img src={IconTwitter} />
-          <img src={IconLinkedIn} />*/}
               </div>
             </div>
-
           )
           : (
             <>
