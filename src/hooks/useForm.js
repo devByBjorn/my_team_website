@@ -2,18 +2,18 @@ import { useState, useEffect, useCallback } from 'react'
 
 const useForm = (stateSchema, validationSchema = {}, callback) => {
   const [state, setState] = useState(stateSchema)
-  const [disable, setDisable] = useState(true)
-  const [isDirty, setIsDirty] = useState(false)
+  //const [disable, setDisable] = useState(true)
+  //const [isDirty, setIsDirty] = useState(false)
 
-  useEffect(() => {
-    setDisable(true)
-  }, [])
+  // useEffect(() => {
+  //   setDisable(true)
+  // }, [])
 
-  useEffect(() => {
-    if (isDirty) {
-      setDisable(validationState())
-    }
-  }, [state, isDirty])
+  // useEffect(() => {
+  //   if (isDirty) {
+  //     setDisable(validationState())
+  //   }
+  // }, [state, isDirty])
 
   const validationState = useCallback(() => {
     const hasErrorInState = Object.keys(validationSchema).some(key => {
@@ -29,16 +29,10 @@ const useForm = (stateSchema, validationSchema = {}, callback) => {
 
   const handleOnBlur = useCallback(
     e => {
-      setIsDirty(true)
+      //setIsDirty(true)
       const name = e.target.name
       const value = e.target.value
       let error = ''
-
-      if (validationSchema[name].required) {
-        if (!value) {
-          error = 'This field is required'
-        }
-      }
 
       if (
         validationSchema[name].validator !== null &&
@@ -66,9 +60,31 @@ const useForm = (stateSchema, validationSchema = {}, callback) => {
     }))
   })
 
+  const checkForEmptyInputs = state => {
+    let error = ''
+    const emptyInputs = Object.entries(state).filter(item => item[1].value === '')
+
+    if (emptyInputs) {
+      return emptyInputs.forEach((input, i) => {
+        const name = input[0]
+        const value = input[1].value
+        if (validationSchema[name].required) {
+          if (!value) {
+            error = 'This field is required'
+          }
+        }
+        setState(prevState => ({
+          ...prevState,
+          [name]: { value, error }
+        }))
+      }, [validationSchema])
+    }
+  }
+
   const handleOnSubmit = useCallback(
     e => {
       e.preventDefault()
+      checkForEmptyInputs(state)
 
       if (!validationState()) {
         callback(state)
@@ -77,7 +93,7 @@ const useForm = (stateSchema, validationSchema = {}, callback) => {
     [state]
   )
 
-  return { state, disable, handleOnChange, handleOnSubmit, handleOnBlur }
+  return { state, handleOnChange, handleOnSubmit, handleOnBlur }
 }
 
 export default useForm

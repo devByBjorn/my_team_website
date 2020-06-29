@@ -64,7 +64,6 @@ const ContactForm = () => {
         onSubmit={handleOnSubmit}>
         <input
           className={state.name.error && 'error-input'}
-          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="name"
           value={state.name.value}
@@ -84,7 +83,6 @@ const ContactForm = () => {
         <small className="error-msg">{state.email.error && state.email.error}</small>
         <input
           className={state.company.error && 'error-input'}
-          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="company"
           value={state.company.value}
@@ -94,7 +92,6 @@ const ContactForm = () => {
         <small className="error-msg">{state.company.error && state.company.error}</small>
         <input
           className={state.title.error && 'error-input'}
-          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="title"
           value={state.title.value}
@@ -114,7 +111,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.message.error && state.message.error}</small>
         <button
           className="btn-primary-dark"
-          disabled={disable}
+          //disabled={disable}
           name="submit"
         >submit</button>
       </form>
