@@ -45,7 +45,6 @@ const DirectorCard = ({ img, name, role, qoute }) => {
       </div>
       <button className={`qoute-btn ${activeBtn}`}
         onClick={showQouteOnClick}
-        style={{ background: activeBtn }}
       >
         <div className="cross" style={{ transform: `rotate(${rotateCross})` }}>
           <img src={IconCross} />
