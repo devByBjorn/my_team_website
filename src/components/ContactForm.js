@@ -10,12 +10,12 @@ const ContactForm = () => {
     message: { value: '', error: '' },
   }
 
-  const validationStateSchema = {
+  const validationSchema = {
     name: {
       required: true,
       validator: {
         regEx: /^[a-zA-ZåäöÅÄÖ\s]*$/,
-        error: 'Invalid name format' // what about space??
+        error: 'Invalid name format'
       }
     },
     email: {
@@ -36,14 +36,14 @@ const ContactForm = () => {
       required: true,
       validator: {
         regEx: /^[a-zA-Z\s]*$/,
-        error: 'Invalid title format' // what about space??
+        error: 'Invalid title format'
       }
     },
     message: {
       required: true,
       validator: {
         regEx: /./,
-        error: 'Invalid message format' // what about space??
+        error: 'Invalid message format'
       }
     }
   }
@@ -52,9 +52,9 @@ const ContactForm = () => {
     alert(JSON.stringify(state, null, 2))
   }
 
-  const { state, handleOnChange, handleOnSubmit, disable } = useForm(
+  const { state, handleOnChange, handleOnSubmit, handleOnBlur, disable } = useForm(
     stateSchema,
-    validationStateSchema,
+    validationSchema,
     onSubmitForm,
   )
 
@@ -64,6 +64,7 @@ const ContactForm = () => {
         onSubmit={handleOnSubmit}>
         <input
           className={state.name.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="name"
           value={state.name.value}
@@ -73,6 +74,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.name.error && state.name.error}</small>
         <input
           className={state.email.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="email"
           value={state.email.value}
@@ -82,6 +84,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.email.error && state.email.error}</small>
         <input
           className={state.company.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="company"
           value={state.company.value}
@@ -91,6 +94,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.company.error && state.company.error}</small>
         <input
           className={state.title.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="title"
           value={state.title.value}
@@ -100,13 +104,14 @@ const ContactForm = () => {
         <small className="error-msg">{state.title.error && state.title.error}</small>
         <textarea
           className={state.message.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="message"
           value={state.message.value}
           type="text"
           placeholder="Message"
         />
-        <small className="error">{state.message.error && state.message.error}</small>
+        <small className="error-msg">{state.message.error && state.message.error}</small>
         <button
           className="btn-primary-dark"
           disabled={disable}
