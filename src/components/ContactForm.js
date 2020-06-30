@@ -28,21 +28,21 @@ const ContactForm = () => {
     company: {
       required: true,
       validator: {
-        regEx: /./,
-        error: 'Invalid',
+        regEx: null,
+        error: '',
       }
     },
     title: {
       required: true,
       validator: {
-        regEx: /^[a-zA-Z\s]*$/,
+        regEx: /^[a-zA-ZåäöÅÄÖ\s]*$/,
         error: 'Invalid title format'
       }
     },
     message: {
       required: true,
       validator: {
-        regEx: /./,
+        regEx: null,
         error: 'Invalid message format'
       }
     }
@@ -64,6 +64,7 @@ const ContactForm = () => {
         onSubmit={handleOnSubmit}>
         <input
           className={state.name.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="name"
           value={state.name.value}
@@ -83,6 +84,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.email.error && state.email.error}</small>
         <input
           className={state.company.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="company"
           value={state.company.value}
@@ -92,6 +94,7 @@ const ContactForm = () => {
         <small className="error-msg">{state.company.error && state.company.error}</small>
         <input
           className={state.title.error && 'error-input'}
+          onBlur={handleOnBlur}
           onChange={handleOnChange}
           name="title"
           value={state.title.value}

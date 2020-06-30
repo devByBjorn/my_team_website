@@ -1,14 +1,10 @@
 .home-top-section {
-  background-image: url('./../images/bg-pattern-home-1.svg');
-  background-position: -6% 15%;
-  background-repeat: no-repeat;
-
   .content-container {
     background: url('./../images/bg-pattern-home-2.svg') no-repeat 100% 100%;
   }
-}
 
-.home-top-content {
+}
+  .home-top-content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -31,6 +27,14 @@
     @include body-large;
     margin-top: $space-xl;
     max-width: 45rem;
+  }
+}
+
+@media(min-width: 1460px) {
+  .home-top-section {
+    background-image: url('./../images/bg-pattern-home-1.svg');
+    background-position: -6% 15%;
+    background-repeat: no-repeat;
   }
 }
 

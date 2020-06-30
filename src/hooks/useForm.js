@@ -2,18 +2,6 @@ import { useState, useEffect, useCallback } from 'react'
 
 const useForm = (stateSchema, validationSchema = {}, callback) => {
   const [state, setState] = useState(stateSchema)
-  //const [disable, setDisable] = useState(true)
-  //const [isDirty, setIsDirty] = useState(false)
-
-  // useEffect(() => {
-  //   setDisable(true)
-  // }, [])
-
-  // useEffect(() => {
-  //   if (isDirty) {
-  //     setDisable(validationState())
-  //   }
-  // }, [state, isDirty])
 
   const validationState = useCallback(() => {
     const hasErrorInState = Object.keys(validationSchema).some(key => {
@@ -29,7 +17,6 @@ const useForm = (stateSchema, validationSchema = {}, callback) => {
 
   const handleOnBlur = useCallback(
     e => {
-      //setIsDirty(true)
       const name = e.target.name
       const value = e.target.value
       let error = ''

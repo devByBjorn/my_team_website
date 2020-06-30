@@ -1,9 +1,3 @@
-.about-top-section {
-  background-image: url('./../images/bg-pattern-about-1-mobile-nav-1.svg');
-  background-position: 106% 100%;
-  background-repeat: no-repeat;
-}
-
 .about-top-content {
   display: flex;
   justify-content: space-between;
@@ -25,6 +19,15 @@
     @include body-large;
     margin-top: $space-m;
     max-width: 78rem;
+  }
+}
+
+
+@media(min-width: 1460px) {
+  .about-top-section {
+    background-image: url('./../images/bg-pattern-about-1-mobile-nav-1.svg');
+    background-position: 106% 100%;
+    background-repeat: no-repeat;
   }
 }
 
